@@ -53,6 +53,16 @@ if(move_y != 0){
 	}
 }
 
+//Room Transitions
+var transition = instance_place(x,y,obj_transition);
+if(transition != noone)
+{
+	with(game){
+		spawnRoom = transition.targetRoom;
+		doTransition = true;
+	}
+}
+
 //APPLY MOVEMENT
 x += move_x;
 y += move_y;
