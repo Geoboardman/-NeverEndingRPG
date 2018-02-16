@@ -18,7 +18,7 @@ else
 }
 
 //RESET MOVE VARIABLES
-move_x = 0;
+move_x = 0;      
 move_y = 0;
 
 //INTENDED MOVEMENT

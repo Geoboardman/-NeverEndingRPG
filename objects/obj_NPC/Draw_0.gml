@@ -19,7 +19,6 @@ var yy = y - y_offset;
 //DRAW SHADOW
 draw_sprite(spr_character_shadow, 0, x, y);
 
-
 //DRAW BASE
 if(spr_base != -1) draw_sprite_part(spr_base, 0, floor(x_frame) * frame_size, y_frame * frame_size, frame_size, frame_size, xx, yy);
 
@@ -35,7 +34,7 @@ if(spr_shirt != -1) draw_sprite_part(spr_shirt, 0, floor(x_frame) * frame_size, 
 //DRAW HAIR
 if(spr_hair != -1) draw_sprite_part(spr_hair, 0, floor(x_frame) * frame_size, y_frame * frame_size, frame_size, frame_size, xx, yy);
 
-
+//Increment frame to animate
 if(x_frame < anim_length - 1)
 {
 	x_frame += anim_speed/60;
