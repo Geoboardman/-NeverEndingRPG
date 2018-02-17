@@ -4,13 +4,13 @@ var anim_length = 9;
 var anim_speed = 12;
 var frame_size = 64;
 
-if(move_x < 0) y_frame = 9;
-else if(move_x > 0) y_frame = 11;
-else if(move_y > 0) y_frame = 10;
-else if(move_y < 0) y_frame = 8;
-else
+switch(facing)
 {
-	x_frame = 0;
+	case dir.left: y_frame = 9;		break;
+	case dir.right: y_frame = 11;	break;
+	case dir.down: y_frame = 10;	break;
+	case dir.up: y_frame = 8;		break;
+	case -1: x_frame = 0;			break;
 }
 
 var xx = x - x_offset;

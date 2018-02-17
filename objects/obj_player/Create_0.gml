@@ -15,6 +15,8 @@ runSpd = 3;
 
 COLLISION = false;
 
+facing = -1;
+
 spr_base = spr_body_male_light;
 spr_feet = spr_feet_shoes_male_black;
 spr_hair = spr_hair_male_bedhead_brown;
