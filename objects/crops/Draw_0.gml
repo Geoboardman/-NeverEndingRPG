@@ -1,4 +1,4 @@
-if(!planting) exit;
+if(!planting and room != room1) exit;
 
 var cs = cellSize;
 var gx = mx div cs;
